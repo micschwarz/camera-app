@@ -28,7 +28,7 @@ const getFileHandle = async () => {
     await verifyPermission();
   } else {
     dirHandle = await window.showDirectoryPicker();
-    await set("dirHandle", newHandle);
+    await set("dirHandle", dirHandle);
   }
 
   setupPopup.classList.add("close");
