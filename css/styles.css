@@ -23,7 +23,7 @@ body {
     grid-area: viewfinder;
 }
 
-#shutter-release {
+#shutter {
     width: 3rem;
     height: 3rem;
     display: flex;
@@ -37,12 +37,12 @@ body {
     margin: 0 auto;
 }
 
-#shutter-release:focus,
-#shutter-release:hover {
+#shutter:focus,
+#shutter:hover {
     background: hsl(5, 95%, 45%);
 }
 
-#shutter-release:active {
+#shutter:active {
     background: hsl(5, 95%, 40%);
 }
 
