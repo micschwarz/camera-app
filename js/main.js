@@ -4,7 +4,6 @@ import { createShutter } from "./shutter.js";
 
 const setupPopup = document.getElementById("setup");
 
-// Setup file storage
 const setup = async () => {
   const viewfinder = await createViewfinder({
     element: document.getElementById("viewfinder"),

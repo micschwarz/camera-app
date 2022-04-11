@@ -28,11 +28,6 @@ export const createGallery = async ({ element }) => {
   let dirHandle = await getDirHandle();
   await verifyPermission(dirHandle);
 
-  if (!dirHandle) {
-    dirHandle = await window.showDirectoryPicker();
-    await set("dirHandle", dirHandle);
-  }
-
   return {
     async add(blob) {
       const fileHandle = await dirHandle.getFileHandle(
