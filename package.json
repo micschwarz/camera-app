@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "sirv public --dev"
+    "dev": "sirv . --dev"
   },
   "author": "",
   "license": "ISC",
