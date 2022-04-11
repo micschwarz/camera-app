@@ -24,12 +24,12 @@ let dirHandle;
 const getFileHandle = async () => {
   dirHandle = await get(DIR_HANDLE_KEY);
 
-  if (dirHandle) {
-    await verifyPermission();
-  } else {
+  if (!dirHandle) {
     dirHandle = await window.showDirectoryPicker();
     await set("dirHandle", dirHandle);
   }
+
+  await verifyPermission();
 
   setupPopup.classList.add("close");
 };
